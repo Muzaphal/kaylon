@@ -24,3 +24,31 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Additional styles for better hero display */
+.swiper-slide {
+  background-color: #1a1a2e;
+}
+
+/* Ensure text is always readable */
+.hero-content {
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Better image loading */
+.next-image-wrapper {
+  background-color: #1a1a2e;
+}
+
+/* Responsive image adjustments */
+@media (max-width: 768px) {
+  .swiper-slide img {
+    object-position: center 30% !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .swiper-slide img {
+    object-position: center 20% !important;
+  }
+}
