@@ -146,15 +146,21 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3 group">
-                <FaMapMarkerAlt className="text-blue-400 mt-0.5 flex-shrink-0 group-hover:text-purple-400 transition-colors" size={14} />
+                <span className="text-blue-400 mt-0.5 flex-shrink-0 group-hover:text-purple-400 transition-colors">
+                  <FaMapMarkerAlt size={14} />
+                </span>
                 <span className="text-gray-300">Katwe, Kampala, Uganda</span>
               </li>
               <li className="flex items-start gap-3 group">
-                <FaPhone className="text-blue-400 mt-0.5 flex-shrink-0 group-hover:text-purple-400 transition-colors" size={14} />
+                <span className="text-blue-400 mt-0.5 flex-shrink-0 group-hover:text-purple-400 transition-colors">
+                  <FaPhone size={14} />
+                </span>
                 <span className="text-gray-300">+256 700 659 693</span>
               </li>
               <li className="flex items-start gap-3 group">
-                <FaEnvelope className="text-blue-400 mt-0.5 flex-shrink-0 group-hover:text-purple-400 transition-colors" size={14} />
+                <span className="text-blue-400 mt-0.5 flex-shrink-0 group-hover:text-purple-400 transition-colors">
+                  <FaEnvelope size={14} />
+                </span>
                 <span className="text-gray-300 break-all text-xs">muzaphalisa69@gmail.com</span>
               </li>
               <li className="flex items-start gap-3 group">

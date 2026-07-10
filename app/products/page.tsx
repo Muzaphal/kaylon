@@ -256,7 +256,9 @@ export default function ProductsPage() {
           <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 mb-6 sm:mb-8">
             {/* Search */}
             <div className="relative flex-1">
-              <FaSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+                <FaSearch size={14} />
+              </span>
               <input
                 type="text"
                 placeholder="Search products by name or description..."
@@ -294,7 +296,9 @@ export default function ProductsPage() {
                   }`}
                   onClick={() => setActiveCategory(category.id)}
                 >
-                  <Icon size={14} className="sm:w-4 sm:h-4" />
+                  <span className="flex items-center justify-center sm:w-4 sm:h-4">
+                    <Icon size={14} />
+                  </span>
                   {category.name}
                 </button>
               );
@@ -355,7 +359,7 @@ export default function ProductsPage() {
                       href={`/products/${product.id}`}
                       className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl font-medium flex items-center gap-1.5 sm:gap-2 hover:shadow-lg hover:shadow-purple-500/25 transition-all hover:scale-105 text-xs sm:text-sm"
                     >
-                      View Details <FaArrowRight size={12} className="sm:w-3.5 sm:h-3.5" />
+                      View Details <span className="sm:w-3.5 sm:h-3.5 inline-flex items-center"><FaArrowRight size={12} /></span>
                     </Link>
                   </div>
                 </div>

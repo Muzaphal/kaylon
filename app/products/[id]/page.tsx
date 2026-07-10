@@ -429,7 +429,7 @@ export default function ProductDetailPage() {
               </div>
               {/* Rating Badge */}
               <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
-                <FaStar className="text-yellow-400" />
+                <FaStar color="#facc15" />
                 <span className="font-semibold">{product.rating}</span>
                 <span className="text-gray-500 text-sm">({product.reviews} reviews)</span>
               </div>
@@ -449,10 +449,10 @@ export default function ProductDetailPage() {
                   onClick={() => setIsWishlist(!isWishlist)}
                   className="p-2 rounded-full hover:bg-gray-100 transition-colors"
                 >
-                  <FaHeart className={isWishlist ? "text-red-500" : "text-gray-400"} size={20} />
+                  <FaHeart color={isWishlist ? "#ef4444" : "#9ca3af"} size={20} />
                 </button>
                 <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">
-                  <FaShare className="text-gray-400" size={20} />
+                  <FaShare color="#9CA3AF" size={20} />
                 </button>
               </div>
 
@@ -473,19 +473,19 @@ export default function ProductDetailPage() {
               {/* Key Features - Benefits */}
               <div className="grid grid-cols-2 gap-3 mb-8">
                 <div className="flex items-center gap-2 text-sm text-gray-700 bg-green-50 p-2 rounded-lg">
-                  <FaCheckCircle className="text-green-500" />
+                  <FaCheckCircle color="#10B981" />
                   <span>Premium Quality</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-700 bg-blue-50 p-2 rounded-lg">
-                  <FaShippingFast className="text-blue-500" />
+                  <FaShippingFast color="#3B82F6" />
                   <span>Fast Delivery</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-700 bg-purple-50 p-2 rounded-lg">
-                  <FaShieldAlt className="text-purple-500" />
+                  <FaShieldAlt color="#7C3AED" />
                   <span>5 Year Warranty</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-700 bg-green-50 p-2 rounded-lg">
-                  <FaRecycle className="text-green-500" />
+                  <FaRecycle color="#10B981" />
                   <span>Eco-Friendly</span>
                 </div>
               </div>
@@ -609,13 +609,15 @@ export default function ProductDetailPage() {
               className="bg-white rounded-2xl p-8 shadow-lg"
             >
               <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <FaInfoCircle className="text-purple-600" />
+                <span className="text-purple-600"><FaInfoCircle /></span>
                 Key Features
               </h3>
               <ul className="space-y-3">
                 {product.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-green-500 mt-1 flex-shrink-0">
+                      <FaCheckCircle />
+                    </span>
                     <span className="text-gray-700">{feature}</span>
                   </li>
                 ))}
@@ -630,7 +632,7 @@ export default function ProductDetailPage() {
               className="bg-white rounded-2xl p-8 shadow-lg"
             >
               <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <FaInfoCircle className="text-purple-600" />
+                <span className="text-purple-600"><FaInfoCircle /></span>
                 Product Specifications
               </h3>
               <div className="space-y-3">
@@ -652,7 +654,7 @@ export default function ProductDetailPage() {
             className="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 shadow-lg"
           >
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-              <FaAward className="text-purple-600" />
+              <span className="text-purple-600"><FaAward /></span>
               Why Choose This Product?
             </h3>
             <div className="grid md:grid-cols-2 gap-4">
@@ -673,21 +675,21 @@ export default function ProductDetailPage() {
             className="mt-8 grid md:grid-cols-3 gap-4"
           >
             <div className="bg-white p-4 rounded-xl shadow-lg flex items-center gap-3">
-              <FaTruck className="text-purple-600 text-2xl" />
+              <span className="text-purple-600 text-2xl"><FaTruck /></span>
               <div>
                 <p className="font-semibold">Free Delivery</p>
                 <p className="text-sm text-gray-500">On orders over UGX 500,000</p>
               </div>
             </div>
             <div className="bg-white p-4 rounded-xl shadow-lg flex items-center gap-3">
-              <FaClock className="text-purple-600 text-2xl" />
+              <span className="text-purple-600 text-2xl"><FaClock /></span>
               <div>
                 <p className="font-semibold">Fast Shipping</p>
                 <p className="text-sm text-gray-500">2-5 business days</p>
               </div>
             </div>
             <div className="bg-white p-4 rounded-xl shadow-lg flex items-center gap-3">
-              <FaShieldAlt className="text-purple-600 text-2xl" />
+              <span className="text-purple-600 text-2xl"><FaShieldAlt /></span>
               <div>
                 <p className="font-semibold">Secure Payment</p>
                 <p className="text-sm text-gray-500">100% secure transactions</p>

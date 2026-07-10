@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { IconType } from "react-icons";
 import {
   FaShieldAlt,
   FaLeaf,
@@ -10,7 +11,13 @@ import {
   FaFlask,
 } from "react-icons/fa";
 
-const benefits = [
+type Benefit = {
+  icon: IconType;
+  title: string;
+  description: string;
+};
+
+const benefits: Benefit[] = [
   {
     icon: FaShieldAlt,
     title: "Superior Quality",
@@ -92,7 +99,9 @@ export default function WhyChooseUs() {
             >
               {/* Icon Container - Glassmorphism */}
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-5 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-500 shadow-md group-hover:shadow-lg group-hover:shadow-purple-500/25">
-                <benefit.icon className="text-2xl sm:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 group-hover:text-white transition-all duration-500" />
+                <div className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 group-hover:text-white transition-all duration-500">
+                  <benefit.icon size={32} />
+                </div>
               </div>
               
               {/* Title */}
@@ -119,7 +128,7 @@ export default function WhyChooseUs() {
           viewport={{ once: true }}
           className="text-center mt-12 sm:mt-16"
         >
-          <div className="inline-flex items-center gap-3 backdrop-blur-xl bg-white/40 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl border border-white/50 shadow-lg">
+          <div className="inline-flex flex-wrap items-center justify-center gap-3 backdrop-blur-xl bg-white/40 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl border border-white/50 shadow-lg">
             <span className="text-gray-700 text-sm sm:text-base">
               Ready to experience the KayLon difference?
             </span>

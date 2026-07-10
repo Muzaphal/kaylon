@@ -10,7 +10,8 @@ import {
   FaCalendar, 
   FaUsers,
   FaPhone,
-  FaEnvelope
+  FaEnvelope,
+  FaWhatsapp
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
@@ -100,6 +101,10 @@ const allProjects = [
 ];
 
 export default function ProjectsPage() {
+  // WhatsApp configuration
+  const whatsappNumber = "256700659693";
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+
   const [activeCategory, setActiveCategory] = useState("All");
   const [filteredProjects, setFilteredProjects] = useState(allProjects);
 
@@ -257,16 +262,16 @@ export default function ProjectsPage() {
                   </h3>
                   <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-600 mb-3">
                     <span className="flex items-center gap-1">
-                      <FaLocationDot className="text-blue-500" size={12} />
+                      <FaLocationDot color="rgb(37 99 235)" size={12} />
                       <span className="hidden xs:inline">{project.location}</span>
                       <span className="xs:hidden">{project.location.split(',')[0]}</span>
                     </span>
                     <span className="flex items-center gap-1">
-                      <FaCalendar className="text-blue-500" size={12} />
+                      <FaCalendar color="rgb(37 99 235)" size={12} />
                       {project.year}
                     </span>
                     <span className="flex items-center gap-1">
-                      <FaUsers className="text-blue-500" size={12} />
+                      <FaUsers color="rgb(37 99 235)" size={12} />
                       {project.size}
                     </span>
                   </div>
@@ -275,7 +280,7 @@ export default function ProjectsPage() {
                     href={`/projects/${project.id}`}
                     className="inline-flex items-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 font-semibold hover:gap-3 transition-all group-hover:from-purple-600 group-hover:to-blue-600 text-sm sm:text-base"
                   >
-                    View Project <FaArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                    View Project <span className="transition-transform"><FaArrowRight size={14} /></span>
                   </Link>
                 </div>
               </motion.div>
@@ -323,7 +328,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* CTA Section with Banner Image & Glassmorphism */}
+      {/* CTA Section with Banner Image & Glassmorphism - UPDATED with WhatsApp */}
       <section className="relative py-16 sm:py-20 overflow-hidden">
         {/* Background Banner Image */}
         <div className="absolute inset-0 z-0">
@@ -364,14 +369,16 @@ export default function ProjectsPage() {
                   href="/contact"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition-all hover:scale-105 shadow-lg shadow-purple-500/25 text-sm sm:text-base"
                 >
-                  Get Started <FaArrowRight size={14} className="sm:w-4 sm:h-4" />
+                  Get Started <span className="inline-flex items-center justify-center sm:w-4 sm:h-4"><FaArrowRight size={14} /></span>
                 </Link>
+                {/* WhatsApp Button - Replacing Call Us Now */}
                 <a
-                  href="tel:+256700659693"
-                  className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition-all border border-white/20 hover:scale-105 text-sm sm:text-base"
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-green-500/80 backdrop-blur-sm hover:bg-green-600 text-white px-8 sm:px-10 py-3 sm:py-3.5 rounded-full font-semibold transition-all duration-300 border border-white/30 hover:scale-105 text-sm sm:text-base flex-1 sm:flex-none"
                 >
-                  <FaPhone size={14} />
-                  Call Us Now
+                  <FaWhatsapp size={16} /> Chat on WhatsApp
                 </a>
                 <a
                   href="mailto:muzaphalisa69@gmail.com"
@@ -387,4 +394,4 @@ export default function ProjectsPage() {
       </section>
     </>
   );
-}                                 
+}

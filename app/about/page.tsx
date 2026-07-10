@@ -14,7 +14,8 @@ import {
   FaLightbulb,
   FaPhone,
   FaEnvelope,
-  FaArrowRight
+  FaArrowRight,
+  FaWhatsapp
 } from "react-icons/fa";
 
 const milestones = [
@@ -48,6 +49,10 @@ const teamMembers = [
 ];
 
 export default function AboutPage() {
+  // WhatsApp configuration
+  const whatsappNumber = "256700659693";
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+
   return (
     <>
       {/* Hero Section with Banner Image & Glassmorphism */}
@@ -148,22 +153,62 @@ export default function AboutPage() {
               </p>
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 <div className="backdrop-blur-xl bg-white/40 p-4 rounded-xl border border-white/50">
-                  <FaUsers className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-2" />
+                  <div
+                    className="mb-2"
+                    style={{
+                      color: "transparent",
+                      backgroundImage: "linear-gradient(90deg, #2563eb, #7c3aed)",
+                      WebkitBackgroundClip: "text",
+                      backgroundClip: "text",
+                    }}
+                  >
+                    <FaUsers size={28} />
+                  </div>
                   <p className="font-bold text-2xl">10,000+</p>
                   <p className="text-sm text-gray-600">Happy Customers</p>
                 </div>
                 <div className="backdrop-blur-xl bg-white/40 p-4 rounded-xl border border-white/50">
-                  <FaTrophy className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-2" />
+                  <div
+                    className="mb-2"
+                    style={{
+                      color: "transparent",
+                      backgroundImage: "linear-gradient(90deg, #2563eb, #7c3aed)",
+                      WebkitBackgroundClip: "text",
+                      backgroundClip: "text",
+                    }}
+                  >
+                    <FaTrophy size={28} />
+                  </div>
                   <p className="font-bold text-2xl">25+</p>
                   <p className="text-sm text-gray-600">Years Experience</p>
                 </div>
                 <div className="backdrop-blur-xl bg-white/40 p-4 rounded-xl border border-white/50">
-                  <FaAward className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-2" />
+                  <div
+                    className="mb-2"
+                    style={{
+                      color: "transparent",
+                      backgroundImage: "linear-gradient(90deg, #2563eb, #7c3aed)",
+                      WebkitBackgroundClip: "text",
+                      backgroundClip: "text",
+                    }}
+                  >
+                    <FaAward size={28} />
+                  </div>
                   <p className="font-bold text-2xl">15+</p>
                   <p className="text-sm text-gray-600">Industry Awards</p>
                 </div>
                 <div className="backdrop-blur-xl bg-white/40 p-4 rounded-xl border border-white/50">
-                  <FaIndustry className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-2" />
+                  <div
+                    className="mb-2"
+                    style={{
+                      color: "transparent",
+                      backgroundImage: "linear-gradient(90deg, #2563eb, #7c3aed)",
+                      WebkitBackgroundClip: "text",
+                      backgroundClip: "text",
+                    }}
+                  >
+                    <FaIndustry size={28} />
+                  </div>
                   <p className="font-bold text-2xl">50K+</p>
                   <p className="text-sm text-gray-600">Sq. Ft. Facility</p>
                 </div>
@@ -222,7 +267,9 @@ export default function AboutPage() {
               className="backdrop-blur-xl bg-white/40 rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border border-white/50"
             >
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center mb-4">
-                <FaLightbulb className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600" />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                  <FaLightbulb size={28} />
+                </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold mb-3 text-gray-800">Our Mission</h3>
               <p className="text-gray-600 text-sm sm:text-base">
@@ -240,7 +287,9 @@ export default function AboutPage() {
               className="backdrop-blur-xl bg-white/40 rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border border-white/50"
             >
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center mb-4">
-                <FaAward className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600" />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                  <FaAward size={28} />
+                </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold mb-3 text-gray-800">Our Vision</h3>
               <p className="text-gray-600 text-sm sm:text-base">
@@ -257,7 +306,9 @@ export default function AboutPage() {
               className="backdrop-blur-xl bg-white/40 rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border border-white/50"
             >
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center mb-4">
-                <FaLeaf className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600" />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                  <FaLeaf size={28} />
+                </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold mb-3 text-gray-800">Our Values</h3>
               <p className="text-gray-600 text-sm sm:text-base">
@@ -363,7 +414,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA Section with Banner Image & Glassmorphism */}
+      {/* CTA Section with Banner Image & Glassmorphism - Updated WhatsApp Button */}
       <section className="relative py-16 sm:py-20 md:py-24 overflow-hidden">
         {/* Background Banner Image */}
         <div className="absolute inset-0 z-0">
@@ -406,12 +457,14 @@ export default function AboutPage() {
                 >
                   Get in Touch <FaArrowRight size={14} />
                 </Link>
+                {/* WhatsApp Button - Replacing Call Us Now */}
                 <a
-                  href="tel:+256700659693"
-                  className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition-all border border-white/20 hover:scale-105 text-sm sm:text-base"
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-green-500/80 backdrop-blur-sm hover:bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition-all duration-300 border border-white/30 hover:scale-105 text-sm sm:text-base"
                 >
-                  <FaPhone size={14} />
-                  Call Us Now
+                  <FaWhatsapp size={16} /> Chat on WhatsApp
                 </a>
                 <a
                   href="mailto:muzaphalisa69@gmail.com"

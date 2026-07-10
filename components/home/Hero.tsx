@@ -163,7 +163,7 @@ export default function Hero() {
                         className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg shadow-purple-500/25 text-sm sm:text-base"
                       >
                         {slide.ctaPrimary}
-                        <FaArrowRight size={14} className="sm:w-4 sm:h-4" />
+                        <FaArrowRight size={14} />
                       </Link>
                       <Link
                         href="/contact"

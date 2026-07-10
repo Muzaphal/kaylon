@@ -115,7 +115,9 @@ export default function Products() {
                   className="inline-flex items-center gap-2 text-purple-600 font-semibold group-hover:gap-3 transition-all duration-300 group-hover:text-purple-800"
                 >
                   <span>Learn More</span>
-                  <FaArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
+                  <span className="inline-flex transition-transform duration-300 group-hover:translate-x-1">
+                    <FaArrowRight size={14} />
+                  </span>
                 </Link>
               </div>
             </motion.div>
@@ -134,7 +136,9 @@ export default function Products() {
             className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-full font-semibold hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300 hover:-translate-y-1 group"
           >
             <span>View All Products</span>
-            <FaArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
+            <span className="transition-transform duration-300 group-hover:translate-x-1">
+              <FaArrowRight size={16} />
+            </span>
           </Link>
         </motion.div>
       </div>

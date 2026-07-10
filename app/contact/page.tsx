@@ -15,10 +15,15 @@ import {
   FaYoutube,
   FaCheckCircle,
   FaSpinner,
-  FaArrowRight
+  FaArrowRight,
+  FaWhatsapp
 } from "react-icons/fa";
 
 export default function ContactPage() {
+  // WhatsApp configuration
+  const whatsappNumber = "256700659693";
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -172,11 +177,14 @@ export default function ContactPage() {
               </p>
 
               <div className="flex flex-wrap gap-4">
+                {/* WhatsApp Button - Replacing Call Now */}
                 <a
-                  href="tel:+256700659693"
-                  className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-6 py-3 rounded-full font-semibold transition-all border border-white/20 hover:scale-105"
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-green-500/80 backdrop-blur-sm hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 border border-white/30 hover:scale-105 flex-1 sm:flex-none"
                 >
-                  <FaPhone /> Call Now
+                  <FaWhatsapp size={18} /> Chat on WhatsApp
                 </a>
                 <a
                   href="mailto:muzaphalisa69@gmail.com"
@@ -225,7 +233,9 @@ export default function ContactPage() {
                     className="flex items-start gap-4 group"
                   >
                     <div className="w-14 h-14 bg-white/60 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300 shadow-md">
-                      <info.icon className="text-2xl text-gray-700 group-hover:text-white transition-colors duration-300" />
+                      <div className="text-gray-700 group-hover:text-white transition-colors">
+                        <info.icon size={24} />
+                      </div>
                     </div>
                     <div>
                       <p className="font-semibold text-lg text-gray-800">{info.title}</p>
@@ -279,7 +289,9 @@ export default function ContactPage() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="bg-green-50/80 backdrop-blur-sm border border-green-200 text-green-700 p-6 rounded-xl text-center"
                 >
-                  <FaCheckCircle className="text-4xl text-green-500 mx-auto mb-3" />
+                  <div className="text-green-500 mx-auto mb-3">
+                    <FaCheckCircle size={40} />
+                  </div>
                   <h4 className="text-xl font-bold mb-2">Message Sent!</h4>
                   <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
                 </motion.div>
@@ -382,7 +394,9 @@ export default function ContactPage() {
                   >
                     {isSubmitting ? (
                       <>
-                        <FaSpinner className="animate-spin" />
+                        <span className="animate-spin inline-flex items-center justify-center">
+                          <FaSpinner size={20} />
+                        </span>
                         Sending...
                       </>
                     ) : (
@@ -483,7 +497,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* CTA Section - Glass Theme */}
+      {/* CTA Section - Glass Theme - UPDATED with WhatsApp */}
       <section className="py-16 relative overflow-hidden">
         {/* Background Banner */}
         <div className="absolute inset-0 z-0">
@@ -513,15 +527,18 @@ export default function ContactPage() {
                 Let's discuss your project and find the perfect paint solution for your needs.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
+                {/* WhatsApp Button - Replacing Call Us Now */}
                 <a
-                  href="tel:+256700659693"
-                  className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-8 py-3 rounded-full font-semibold transition-all border border-white/20 hover:scale-105"
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-green-500/80 backdrop-blur-sm hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 border border-white/30 hover:scale-105 flex-1 sm:flex-none"
                 >
-                  <FaPhone /> Call Us Now
+                  <FaWhatsapp size={18} /> Chat on WhatsApp
                 </a>
                 <a
                   href="mailto:muzaphalisa69@gmail.com"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-all hover:scale-105 shadow-lg shadow-purple-500/25"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105 shadow-lg shadow-purple-500/25"
                 >
                   <FaEnvelope /> Email Us
                 </a>

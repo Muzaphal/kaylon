@@ -3,9 +3,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowRight, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaArrowRight, FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 export default function CTA() {
+  // WhatsApp number with country code (without + sign)
+  const whatsappNumber = "256700659693";
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+
   return (
     <section className="relative py-16 sm:py-20 md:py-24 lg:py-28 overflow-hidden">
       {/* Background Image */}
@@ -62,14 +66,16 @@ export default function CTA() {
                 href="/contact"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg shadow-purple-500/25 text-sm sm:text-base"
               >
-                Get Free Quote <FaArrowRight size={14} className="sm:w-4 sm:h-4" />
+                Get Free Quote <FaArrowRight size={14} />
               </Link>
-              <Link
-                href="tel:+256700659693"
-                className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition-all duration-300 border border-white/30 hover:scale-105 text-sm sm:text-base"
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-green-500/80 backdrop-blur-sm hover:bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition-all duration-300 border border-white/30 hover:scale-105 text-sm sm:text-base"
               >
-                <FaPhone size={14} /> Call Now
-              </Link>
+                <FaWhatsapp size={16} /> Chat on WhatsApp
+              </a>
             </div>
           </motion.div>
 

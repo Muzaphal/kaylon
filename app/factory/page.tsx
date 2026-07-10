@@ -22,7 +22,8 @@ import {
   FaExpand,
   FaPhone,
   FaEnvelope,
-  FaArrowRight as FaArrowRightIcon
+  FaArrowRight as FaArrowRightIcon,
+  FaWhatsapp
 } from "react-icons/fa";
 import { IconType } from "react-icons";
 
@@ -79,6 +80,10 @@ const certifications = [
 ];
 
 export default function FactoryPage() {
+  // WhatsApp configuration
+  const whatsappNumber = "256700659693";
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
@@ -235,7 +240,9 @@ export default function FactoryPage() {
                     viewport={{ once: true }}
                     className="flex items-center gap-3 backdrop-blur-sm bg-white/40 p-3 rounded-xl border border-white/50"
                   >
-                    <FaCheckCircle className="text-blue-600 flex-shrink-0" />
+                    <span className="flex-shrink-0 text-blue-600 w-5 h-5">
+                      <FaCheckCircle />
+                    </span>
                     <span className="text-gray-700 text-sm sm:text-base">{cert}</span>
                   </motion.div>
                 ))}
@@ -260,7 +267,9 @@ export default function FactoryPage() {
                 />
               </div>
               <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 sm:p-6 rounded-2xl shadow-xl">
-                <FaTrophy className="text-2xl sm:text-3xl mb-2" />
+                <div className="text-2xl sm:text-3xl mb-2 text-white">
+                  <FaTrophy />
+                </div>
                 <p className="text-xl sm:text-2xl font-bold">50,000+</p>
                 <p className="text-xs sm:text-sm">Sq. Ft. Facility</p>
               </div>
@@ -269,7 +278,7 @@ export default function FactoryPage() {
         </div>
       </section>
 
-      {/* Key Stats - Glassmorphism with Better Spacing */}
+      {/* Key Stats - Glassmorphism with Better Spacing - FIXED */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container-custom px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
@@ -282,7 +291,11 @@ export default function FactoryPage() {
                 viewport={{ once: true }}
                 className="backdrop-blur-xl bg-white/40 rounded-2xl p-4 sm:p-6 text-center shadow-lg border border-white/50 hover:shadow-xl transition-all hover:-translate-y-1"
               >
-                <stat.icon className="text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-2 sm:mb-3" />
+                <div className="mx-auto mb-2 sm:mb-3 text-3xl sm:text-4xl">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 inline-block w-9 h-9 sm:w-10 sm:h-10">
+                    <stat.icon />
+                  </span>
+                </div>
                 <p className="text-xl sm:text-2xl font-bold text-gray-800">{stat.value}</p>
                 <p className="text-xs sm:text-sm text-gray-600">{stat.label}</p>
               </motion.div>
@@ -322,8 +335,10 @@ export default function FactoryPage() {
                 <div className="absolute -top-3 -left-3 w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-sm font-bold">
                   {index + 1}
                 </div>
-                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center mb-3 sm:mb-4">
-                  <process.icon size={28} className="text-blue-600" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center mb-3 sm:mb-4 text-blue-600">
+                  <span className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
+                    <process.icon />
+                  </span>
                 </div>
                 <h4 className="text-base sm:text-lg font-bold mb-2 text-gray-800">{process.title}</h4>
                 <p className="text-gray-600 text-sm">{process.description}</p>
@@ -377,7 +392,9 @@ export default function FactoryPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="flex flex-col items-center gap-2">
                     <div className="bg-white/20 backdrop-blur-sm rounded-full p-2 sm:p-3 hover:bg-white/30 transition-colors">
-                      <FaExpand className="text-white text-xl sm:text-2xl" />
+                      <span className="text-white w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center">
+                        <FaExpand />
+                      </span>
                     </div>
                     <span className="text-white text-xs sm:text-sm font-medium bg-black/50 px-3 sm:px-4 py-1 rounded-full">
                       Click to view
@@ -409,7 +426,9 @@ export default function FactoryPage() {
               onClick={closeLightbox}
               className="absolute top-4 right-4 z-10 text-white bg-black/50 hover:bg-black/70 rounded-full p-3 transition-colors duration-300"
             >
-              <FaTimes size={28} />
+              <span className="text-white w-7 h-7 flex items-center justify-center">
+                <FaTimes />
+              </span>
             </button>
 
             {/* Image counter */}
@@ -425,7 +444,9 @@ export default function FactoryPage() {
               }}
               className="absolute left-4 z-10 text-white bg-black/50 hover:bg-black/70 rounded-full p-3 transition-colors duration-300 hidden md:block"
             >
-              <FaArrowLeft size={28} />
+              <span className="text-white w-7 h-7 flex items-center justify-center">
+                <FaArrowLeft />
+              </span>
             </button>
 
             <button
@@ -435,7 +456,9 @@ export default function FactoryPage() {
               }}
               className="absolute right-4 z-10 text-white bg-black/50 hover:bg-black/70 rounded-full p-3 transition-colors duration-300 hidden md:block"
             >
-              <FaArrowRight size={28} />
+              <span className="text-white w-7 h-7 flex items-center justify-center">
+                <FaArrowRight />
+              </span>
             </button>
 
             {/* Image */}
@@ -445,7 +468,7 @@ export default function FactoryPage() {
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ type: "spring", damping: 20 }}
               className="relative max-w-7xl w-full h-[85vh]"
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation()}
             >
               <Image
                 src={selectedImage.src}
@@ -473,7 +496,9 @@ export default function FactoryPage() {
                 }}
                 className="text-white bg-black/50 hover:bg-black/70 rounded-full p-3 transition-colors duration-300"
               >
-                <FaArrowLeft size={24} />
+                <span className="text-white w-6 h-6 flex items-center justify-center">
+                  <FaArrowLeft />
+                </span>
               </button>
               <button
                 onClick={(e) => {
@@ -482,7 +507,9 @@ export default function FactoryPage() {
                 }}
                 className="text-white bg-black/50 hover:bg-black/70 rounded-full p-3 transition-colors duration-300"
               >
-                <FaArrowRight size={24} />
+                <span className="text-white w-6 h-6 flex items-center justify-center">
+                  <FaArrowRight />
+                </span>
               </button>
             </div>
 
@@ -508,7 +535,7 @@ export default function FactoryPage() {
         )}
       </AnimatePresence>
 
-      {/* CTA Section with Banner Image & Glassmorphism with Better Spacing */}
+      {/* CTA Section with Banner Image & Glassmorphism - UPDATED with WhatsApp */}
       <section className="relative py-16 sm:py-20 md:py-24 overflow-hidden">
         {/* Background Banner Image */}
         <div className="absolute inset-0 z-0">
@@ -549,14 +576,16 @@ export default function FactoryPage() {
                   href="/contact"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition-all hover:scale-105 shadow-lg shadow-purple-500/25 text-sm sm:text-base"
                 >
-                  Schedule a Visit <FaArrowRightIcon size={14} className="sm:w-4 sm:h-4" />
+                  Schedule a Visit <FaArrowRightIcon size={14} />
                 </a>
+                {/* WhatsApp Button - Replacing Call Us Now */}
                 <a
-                  href="tel:+256700659693"
-                  className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition-all border border-white/20 hover:scale-105 text-sm sm:text-base"
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-green-500/80 backdrop-blur-sm hover:bg-green-600 text-white px-8 sm:px-10 py-3 sm:py-3.5 rounded-full font-semibold transition-all duration-300 border border-white/30 hover:scale-105 text-sm sm:text-base flex-1 sm:flex-none"
                 >
-                  <FaPhone size={14} />
-                  Call Us Now
+                  <FaWhatsapp size={16} /> Chat on WhatsApp
                 </a>
                 <a
                   href="mailto:muzaphalisa69@gmail.com"
