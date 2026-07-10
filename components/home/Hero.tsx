@@ -104,7 +104,7 @@ export default function Hero() {
 
               {/* Content with better spacing */}
               <div className="relative h-full flex items-center">
-                <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+                <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12">
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -116,17 +116,17 @@ export default function Hero() {
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.6, delay: 0.4 }}
-                      className="inline-block backdrop-blur-md bg-white/10 text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6 border border-white/20"
+                      className="inline-block backdrop-blur-md bg-white/10 text-white px-3 sm:px-4 md:px-6 py-1 sm:py-1.5 md:py-2 rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4 md:mb-6 border border-white/20"
                     >
                       KayLon Paints
                     </motion.span>
 
-                    {/* Title - Responsive sizing */}
+                    {/* Title - smaller on mobile */}
                     <motion.h1
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.3 }}
-                      className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-2 sm:mb-3"
+                      className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight mb-2 sm:mb-3"
                     >
                       {slide.title}
                     </motion.h1>
@@ -136,7 +136,7 @@ export default function Hero() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.4 }}
-                      className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-200 font-medium mb-2 sm:mb-4"
+                      className="text-sm sm:text-base md:text-lg lg:text-xl text-blue-200 font-medium mb-2 sm:mb-4"
                     >
                       {slide.subtitle}
                     </motion.h2>
@@ -146,28 +146,28 @@ export default function Hero() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.5 }}
-                      className="text-white/90 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 max-w-lg drop-shadow-lg"
+                      className="text-white/90 text-xs sm:text-sm md:text-base lg:text-lg mb-4 sm:mb-6 md:mb-8 max-w-lg drop-shadow-lg leading-relaxed"
                     >
                       {slide.description}
                     </motion.p>
 
-                    {/* Buttons - Glassmorphism style */}
+                    {/* Buttons - smaller on mobile */}
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.6 }}
-                      className="flex flex-wrap gap-3 sm:gap-4"
+                      className="flex flex-wrap gap-2 sm:gap-3 md:gap-4"
                     >
                       <Link
                         href="/products"
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg shadow-purple-500/25 text-sm sm:text-base"
+                        className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-3 sm:px-4 md:px-6 lg:px-8 py-1.5 sm:py-2 md:py-3 lg:py-4 rounded-full font-semibold flex items-center gap-1.5 sm:gap-2 transition-all duration-300 hover:scale-105 shadow-lg shadow-purple-500/25 text-xs sm:text-sm md:text-base"
                       >
                         {slide.ctaPrimary}
-                        <FaArrowRight size={14} />
+                        <FaArrowRight size={12} className="sm:w-3 sm:h-3 md:w-4 md:h-4" />
                       </Link>
                       <Link
                         href="/contact"
-                        className="backdrop-blur-md bg-white/20 hover:bg-white/30 text-white border border-white/30 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 text-sm sm:text-base"
+                        className="backdrop-blur-md bg-white/20 hover:bg-white/30 text-white border border-white/30 px-3 sm:px-4 md:px-6 lg:px-8 py-1.5 sm:py-2 md:py-3 lg:py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 text-xs sm:text-sm md:text-base"
                       >
                         {slide.ctaSecondary}
                       </Link>
@@ -184,15 +184,18 @@ export default function Hero() {
               </div>
 
               {/* Mobile scroll indicator */}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/20 text-xs flex md:hidden items-center gap-2 z-10">
-                <span className="w-8 h-px bg-white/20" />
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/20 text-[10px] flex md:hidden items-center gap-2 z-10">
+                <span className="w-6 h-px bg-white/20" />
                 <span>Swipe</span>
-                <span className="w-8 h-px bg-white/20" />
+                <span className="w-6 h-px bg-white/20" />
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* Custom Navigation Buttons */}
+    
 
       {/* Pagination styling override */}
       <style jsx>{`
@@ -213,7 +216,7 @@ export default function Hero() {
         }
         @media (max-width: 640px) {
           :global(.swiper-pagination) {
-            bottom: 12px !important;
+            bottom: 10px !important;
           }
           :global(.swiper-pagination-bullet) {
             width: 6px !important;

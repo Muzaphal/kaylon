@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar";
 
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -12,8 +12,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "KayLon Paints | The Paint of Excellence",
-  description:
-    "Premium quality paints for homes, commercial buildings, and industrial projects.",
+  description: "Premium quality paints for homes, commercial buildings, and industrial projects.",
+  viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+  // ... other metadata
 };
 
 export default function RootLayout({
@@ -22,10 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>
+    <html lang="en" className="overflow-x-hidden">
+      <body className={`${poppins.className} overflow-x-hidden w-full max-w-[100vw]`}>
         <Navbar />
-        <main>{children}</main>
+        <main className="min-h-screen w-full overflow-x-hidden">{children}</main>
         <Footer />
       </body>
     </html>
