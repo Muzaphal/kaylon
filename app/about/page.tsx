@@ -83,7 +83,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto"
+            className="max-w-4xl"
           >
             <div className="backdrop-blur-md bg-white/10 rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 border border-white/20 shadow-2xl">
               <div className="flex flex-wrap items-center gap-3 mb-6">
