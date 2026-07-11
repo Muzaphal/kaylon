@@ -39,11 +39,6 @@ const allProjects = [
       "Professional team of 50+ painters",
       "Completed within 3 months"
     ],
-    gallery: [
-      "/projects/residential-1.jpg",
-      "/projects/residential-2.webp",
-      "/projects/residential-3.jpg",
-    ],
     client: "Green Valley Developers",
     duration: "3 months",
     scope: "Full exterior painting",
@@ -66,11 +61,6 @@ const allProjects = [
       "Quick-drying formula for minimal disruption",
       "Professional project management",
       "Completed within 4 months"
-    ],
-    gallery: [
-      "/projects/commercial-1.jpg",
-      "/projects/commercial-2.jpg",
-      "/projects/commercial-3.jpg",
     ],
     client: "Tower Management Ltd",
     duration: "4 months",
@@ -95,11 +85,6 @@ const allProjects = [
       "Durable exterior weather guard",
       "Completed within 2 months"
     ],
-    gallery: [
-      "/projects/industrial-1.jpg",
-      "/projects/industrial-2.jpg",
-      "/projects/industrial-3.jpg",
-    ],
     client: "Mbarara Logistics Hub",
     duration: "2 months",
     scope: "Industrial coating & exterior painting",
@@ -122,11 +107,6 @@ const allProjects = [
       "Elegant color palettes",
       "Exterior weather protection",
       "Completed within 5 months"
-    ],
-    gallery: [
-      "/projects/hotel-1.jpg",
-      "/projects/hotel-2.jpg",
-      "/projects/hotel-3.jpg",
     ],
     client: "Kampala Luxury Hotels Group",
     duration: "5 months",
@@ -179,11 +159,6 @@ const allProjects = [
       "Weather proof sealants",
       "Completed within 1.5 months"
     ],
-    gallery: [
-      "/projects/villa-1.jpg",
-      "/projects/villa-2.jpg",
-      "/projects/villa-3.jpg",
-    ],
     client: "Private Client",
     duration: "1.5 months",
     scope: "Full villa painting",
@@ -206,11 +181,6 @@ const allProjects = [
       "Anti-stain technology",
       "Quick installation to minimize disruption",
       "Completed within 4 months"
-    ],
-    gallery: [
-      "/projects/mall-1.jpg",
-      "/projects/mall-2.jpg",
-      "/projects/mall-3.jpg",
     ],
     client: "Kampala Mall Management",
     duration: "4 months",
@@ -235,11 +205,7 @@ const allProjects = [
       "Energy-efficient reflective paints",
       "Completed within 3 months"
     ],
-    gallery: [
-      "/projects/government-1.jpg",
-      "/projects/government-2.jpg",
-      "/projects/government-3.jpg",
-    ],
+    
     client: "Masaka District Government",
     duration: "3 months",
     scope: "Full government facility painting",
