@@ -41,7 +41,7 @@ const allProjects = [
     ],
     gallery: [
       "/projects/residential-1.jpg",
-      "/projects/residential-2.jpg",
+      "/projects/residential-2.webp",
       "/projects/residential-3.jpg",
     ],
     client: "Green Valley Developers",
@@ -153,7 +153,7 @@ const allProjects = [
     ],
     gallery: [
       "/projects/school-1.jpg",
-      "/projects/school-2.jpg",
+      "/projects/school-2.avif",
       "/projects/school-3.jpg",
     ],
     client: "Entebbe International School",
