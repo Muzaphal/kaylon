@@ -21,7 +21,7 @@ import {
 
 export default function ContactPage() {
   // WhatsApp configuration
-  const whatsappNumber = "256700659693";
+  const whatsappNumber = "256703355441";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   const [formData, setFormData] = useState({
@@ -98,14 +98,14 @@ export default function ContactPage() {
     {
       icon: FaPhone,
       title: "Phone",
-      details: ["+256 700 659 693", "+256 700 659 693"],
-      link: "tel:+256700659693",
+      details: ["+256 703 355 441"],
+      link: "tel:+256703355441",
     },
     {
       icon: FaEnvelope,
       title: "Email",
-      details: ["muzaphalisa69@gmail.com", "sales@kaylonpaints.com"],
-      link: "mailto:muzaphalisa69@gmail.com",
+      details: ["Kaylonpaints25@outlook.com"],
+      link: "mailto:Kaylonpaints25@outlook.com",
     },
     {
       icon: FaMapMarkerAlt,
@@ -187,7 +187,7 @@ export default function ContactPage() {
                   <FaWhatsapp size={18} /> Chat on WhatsApp
                 </a>
                 <a
-                  href="mailto:muzaphalisa69@gmail.com"
+                  href="mailto:Kaylonpaints25@outlook.com"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105 shadow-lg shadow-purple-500/25"
                 >
                   <FaEnvelope /> Email Us <FaArrowRight size={14} />
@@ -537,7 +537,7 @@ export default function ContactPage() {
                   <FaWhatsapp size={18} /> Chat on WhatsApp
                 </a>
                 <a
-                  href="mailto:muzaphalisa69@gmail.com"
+                  href="mailto:Kaylonpaints25@outlook.com"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105 shadow-lg shadow-purple-500/25"
                 >
                   <FaEnvelope /> Email Us

@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa";
 const testimonials = [
   {
     id: 1,
-    name: "John Doe",
+    name: "Eng Vicent",
     role: "Architect",
     content: "KayLon paints have transformed our projects. The quality and finish are exceptional.",
     rating: 5,
@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Jane Smith",
+    name: "Ssekajja",
     role: "Contractor",
     content: "We've been using KayLon products for years. The durability and coverage are unmatched.",
     rating: 5,
@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Robert Johnson",
+    name: "Mr Mubiru",
     role: "Homeowner",
     content: "The paint quality is amazing. Our home looks brand new after using KayLon.",
     rating: 5,

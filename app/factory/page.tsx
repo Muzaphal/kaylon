@@ -31,14 +31,14 @@ type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
 
 // Gallery images data with better descriptions
 const galleryImages = [
-  { id: 1, src: "/factory/gallery-1.png", alt: "Production Line", title: "Advanced Production Line" },
-  { id: 2, src: "/factory/gallery-2.png", alt: "Quality Control Lab", title: "Quality Control Laboratory" },
-  { id: 3, src: "/factory/gallery-3.png", alt: "Automated Mixing", title: "Automated Mixing Process" },
-  { id: 4, src: "/factory/gallery-4.png", alt: "Packaging Area", title: "Packaging & Distribution" },
-  { id: 5, src: "/factory/gallery-5.png", alt: "Storage Facility", title: "Storage & Warehouse" },
-  { id: 6, src: "/factory/gallery-6.png", alt: "R&D Center", title: "Research & Development" },
-  { id: 7, src: "/factory/gallery-7.png", alt: "Quality Testing", title: "Quality Testing Equipment" },
-  { id: 8, src: "/factory/gallery-8.png", alt: "Finished Products", title: "Finished Products Display" },
+  { id: 1, src: "/factory/gallery1.png", alt: "Production Line", title: "Advanced Production Line" },
+  { id: 2, src: "/factory/gallery2.png", alt: "Quality Control Lab", title: "Quality Control Laboratory" },
+  { id: 3, src: "/factory/gallery3.png", alt: "Automated Mixing", title: "Automated Mixing Process" },
+  { id: 4, src: "/factory/gallery4.png", alt: "Packaging Area", title: "Packaging & Distribution" },
+  { id: 5, src: "/factory/gallery5.png", alt: "Storage Facility", title: "Storage & Warehouse" },
+  { id: 6, src: "/factory/gallery6.png", alt: "R&D Center", title: "Research & Development" },
+  { id: 7, src: "/factory/gallery7.png", alt: "Quality Testing", title: "Quality Testing Equipment" },
+  { id: 8, src: "/factory/gallery8.png", alt: "Finished Products", title: "Finished Products Display" },
 ];
 
 const stats: { icon: IconComponent; label: string; value: string }[] = [
@@ -81,7 +81,7 @@ const certifications = [
 
 export default function FactoryPage() {
   // WhatsApp configuration
-  const whatsappNumber = "256700659693";
+  const whatsappNumber = "256703355441";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
@@ -258,7 +258,7 @@ export default function FactoryPage() {
             >
               <div className="relative h-[350px] sm:h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-white/50">
                 <Image
-                  src="/factory/facility.png"
+                  src="/factory/gallery-9.png"
                   alt="KayLon Factory"
                   fill
                   className="object-cover"

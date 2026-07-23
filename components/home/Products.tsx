@@ -22,17 +22,17 @@ const products = [
   },
   {
     id: 3,
-    name: "Premium Interior Emulsion",
+    name: "Matt Waterbased Paint",
     category: "Interior Paints",
     description: "Luxury finish for interior walls with excellent coverage",
     image: "/products/interior.png",
   },
   {
     id: 4,
-    name: "Industrial Epoxy Coating",
+    name: "Vinyl Silk Paint",
     category: "Industrial",
-    description: "Heavy-duty protection for industrial floors and surfaces",
-    image: "/products/epoxy.jpg",
+    description: "Heavy-duty for silk protection for walls and surfaces",
+    image: "/products/silk.png",
   },
 ];
 

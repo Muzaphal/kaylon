@@ -224,7 +224,7 @@ export default function AboutPage() {
             >
               <div className="relative h-[350px] sm:h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-white/50">
                 <Image
-                  src="/about/texture-paste black.png"
+                  src="/about/silk.png"
                   alt="KayLon Factory"
                   fill
                   className="object-cover"

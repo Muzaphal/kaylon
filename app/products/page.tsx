@@ -28,11 +28,11 @@ const categories = [
 const allProducts = [
   {
     id: 1,
-    name: "Premium Interior Emulsion",
+    name: "WaterBased Undercoat Paint",
     category: "interior",
-    description: "Luxury finish for interior walls with excellent coverage and washability",
-    image: "/products/interior.png",
-    price: "UGX 260,000",
+    description: "Luxury finish for interior walls with excellent coverage and",
+    image: "/products/undercoat.png",
+    price: "UGX 60,000",
     rating: 4.8,
     reviews: 124,
     features: ["Low VOC", "Washable", "Anti-fungal", "Excellent coverage"],
@@ -61,11 +61,11 @@ const allProducts = [
   },
   {
     id: 4,
-    name: "Water Based Undercoat",
+    name: "Textured Paint",
     category: "primers",
     description: "Premium primer for superior adhesion and surface preparation",
-    image: "/products/jery-topcoat.png",
-    price: "UGX 60,000",
+    image: "/products/primer.png",
+    price: "UGX 260,000",
     rating: 4.6,
     reviews: 87,
     features: ["Water Based", "Quick Drying", "Excellent Adhesion", "Smooth Finish"],
@@ -75,7 +75,7 @@ const allProducts = [
     name: "Texture Paste",
     category: "specialty",
     description: "Advanced protection against wall",
-    image: "/products/texture-paste black.png",
+    image: "/products/jery-topcoat.png",
     price: "UGX 265,000",
     rating: 4.8,
     reviews: 43,
@@ -83,11 +83,11 @@ const allProducts = [
   },
   {
     id: 6,
-    name: "Eco-Friendly Emulsion",
+    name: "Matt Emulsion Paint",
     category: "interior",
     description: "Low VOC, environmentally friendly paint with natural ingredients",
     image: "/products/eco.png",
-    price: "UGX 75,000",
+    price: "UGX 350,000",
     rating: 4.9,
     reviews: 112,
     features: ["Zero VOC", "Natural Ingredients", "Eco-friendly", "Safe for kids"],
@@ -105,9 +105,9 @@ const allProducts = [
   },
   {
     id: 8,
-    name: "Concrete Floor Coating",
+    name: "Vinyl Silk Paint",
     category: "industrial",
-    description: "Industrial-grade coating for walls floors and surfaces",
+    description: "Industrial-grade silk for walls walls and surfaces",
     image: "/products/silk.png",
     price: "UGX 350,000",
     rating: 4.7,
@@ -220,7 +220,7 @@ export default function ProductsPage() {
                   href="/contact"
                   className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-semibold transition-all border border-white/20 hover:scale-105 text-sm sm:text-base"
                 >
-                  Get a Quote
+                  Contact Us
                 </Link>
               </div>
             </div>

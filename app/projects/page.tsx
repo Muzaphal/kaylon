@@ -102,7 +102,7 @@ const allProjects = [
 
 export default function ProjectsPage() {
   // WhatsApp configuration
-  const whatsappNumber = "256700659693";
+  const whatsappNumber = "256703355441";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   const [activeCategory, setActiveCategory] = useState("All");

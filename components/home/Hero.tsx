@@ -28,7 +28,7 @@ const heroSlides = [
       "Premium quality water-based undercoat for superior adhesion and lasting protection on all surfaces.",
     image: Banner1,
     ctaPrimary: "Explore Products",
-    ctaSecondary: "Get Quote",
+    ctaSecondary: "Contact Us",
     overlay: "from-blue-950/80 to-purple-950/80",
   },
   {
@@ -39,7 +39,7 @@ const heroSlides = [
       "Advanced weather-resistant formula that protects your exterior walls from harsh climate conditions.",
     image: Banner2,
     ctaPrimary: "Learn More",
-    ctaSecondary: "Get Quote",
+    ctaSecondary: "Contact Us",
     overlay: "from-purple-950/80 to-blue-950/80",
   },
   {

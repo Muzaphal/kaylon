@@ -27,12 +27,12 @@ import {
 const productsData = [
   {
     id: 1,
-    name: "Premium Interior Emulsion",
+    name: "Water Based Undercoat",
     category: "Interior Paints",
     description: "Luxury finish for interior walls with excellent coverage and washability",
-    fullDescription: "Premium Interior Emulsion delivers a luxurious, durable finish for interior walls and ceilings. Its advanced formula provides excellent coverage, washability, and a smooth, professional look that transforms any room. Perfect for living rooms, bedrooms, and high-traffic areas.",
-    image: "/products/interior.png",
-    price: "UGX 260,000",
+    fullDescription: "Premium undercoat Emulsion delivers a luxurious, durable finish for interior walls and ceilings. Its advanced formula provides excellent coverage and professional look that transforms any room. Perfect for living rooms, bedrooms, and high-traffic areas.",
+    image: "/products/undercoat.png",
+    price: "UGX 60,000",
     rating: 4.8,
     reviews: 124,
     features: [
@@ -101,11 +101,11 @@ const productsData = [
   },
   {
     id: 3,
-    name: "Industrial Epoxy Coating",
+    name: "Matt Waterbased Paint",
     category: "Industrial Coatings",
-    description: "Heavy-duty protection for industrial floors with chemical resistance",
-    fullDescription: "Industrial Epoxy Coating is a high-performance, durable coating designed for heavy-duty industrial environments. It provides exceptional chemical resistance, durability, and a slip-resistant finish for maximum safety in warehouses, factories, and commercial spaces.",
-    image: "/products/epoxy.jpg",
+    description: "Heavy-duty protection for roofs with chemical resistance",
+    fullDescription: "Heavy-duty protection for roofs is a high-performance, durable coating designed for heavy-duty industrial environments. It provides exceptional chemical resistance, durability,  finish for maximum safety in homes, factories, and commercial spaces.",
+    image: "/products/interior.png",
     price: "UGX 350,000",
     rating: 4.7,
     reviews: 56,
@@ -138,16 +138,16 @@ const productsData = [
   },
   {
     id: 4,
-    name: "Water Based Undercoat",
-    category: "Primers",
-    description: "Premium primer for superior adhesion and surface preparation",
-    fullDescription: "Our Water Based Undercoat is a premium quality primer designed to provide excellent adhesion, smooth finish, and lasting protection for all interior and exterior surfaces. This eco-friendly formulation is low VOC and fast-drying, perfect for professional and DIY applications.",
-    image: "/products/jery-topcoat.png",
-    price: "UGX 60,000",
+    name: "Vinyl Silk Paint",
+    category: "Vinyl Silk",
+    description: "Premium silk for walls and surface preparation",
+    fullDescription: "Our Water Based Silk is a premium quality silk designed to provide excellent, smooth finish, and lasting protection for all interior surfaces. This eco-friendly formulation is low VOC and fast-drying, perfect for professional and DIY applications.",
+    image: "/products/silk.png",
+    price: "UGX 350,000",
     rating: 4.6,
     reviews: 87,
     features: [
-      "Superior adhesion to all surfaces",
+      "Superior silk to all walls",
       "Low VOC and eco-friendly",
       "Fast drying - recoat in 2 hours",
       "Smooth, even finish",
@@ -179,7 +179,7 @@ const productsData = [
     category: "Specialty Finishes",
     description: "Advanced protection against wall",
     fullDescription: "Texture Paste is a premium decorative finish that adds depth and character to interior walls. It creates unique textured patterns and provides excellent coverage while hiding imperfections. Ideal for accent walls, feature areas, and modern interior designs.",
-    image: "/products/texture-paste black.png",
+    image: "/products/jery-topcoat.png",
     price: "UGX 265,000",
     rating: 4.8,
     reviews: 43,
@@ -212,12 +212,12 @@ const productsData = [
   },
   {
     id: 6,
-    name: "Eco-Friendly Emulsion",
+    name: "Matt Emulsion Paint",
     category: "Interior Paints",
     description: "Low VOC, environmentally friendly paint with natural ingredients",
     fullDescription: "Eco-Friendly Emulsion is a premium, environmentally conscious paint formulated with natural ingredients and zero VOCs. It provides a beautiful, durable finish while being safe for children, pets, and the environment. Perfect for nurseries, bedrooms, and eco-conscious projects.",
     image: "/products/eco.png",
-    price: "UGX 75,000",
+    price: "UGX 350,000",
     rating: 4.9,
     reviews: 112,
     features: [
@@ -286,10 +286,10 @@ const productsData = [
   },
   {
     id: 8,
-    name: "Concrete Floor Coating",
+    name: "Vinyl Silk Paint",
     category: "Industrial Coatings",
-    description: "Industrial-grade coating for walls floors and surfaces",
-    fullDescription: "Concrete Floor Coating is an industrial-grade, high-performance coating designed for concrete floors and surfaces. It provides exceptional durability, chemical resistance, and a professional finish suitable for warehouses, garages, and commercial spaces.",
+    description: "Vinyl silk paint for walls and surfaces",
+    fullDescription: "Vinyl silk paint for is an industrial-grade, high-performance coating designed for surfaces. It provides exceptional durability, chemical resistance, and a professional finish suitable for warehouses, garages, and commercial spaces.",
     image: "/products/silk.png",
     price: "UGX 350,000",
     rating: 4.7,
@@ -568,7 +568,7 @@ export default function ProductDetailPage() {
                   className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-center hover:shadow-xl hover:shadow-purple-500/25 transition-all hover:-translate-y-1 flex items-center justify-center gap-2"
                 >
                   <FaWhatsapp size={20} />
-                  Get Quote on WhatsApp
+                  Contact Us
                 </Link>
                 <Link
                   href="/contact"

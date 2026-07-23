@@ -7,7 +7,7 @@ import { FaArrowRight, FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 export default function CTA() {
   // WhatsApp number with country code (without + sign)
-  const whatsappNumber = "256700659693";
+  const whatsappNumber = "256703355441";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
@@ -66,7 +66,7 @@ export default function CTA() {
                 href="/contact"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg shadow-purple-500/25 text-sm sm:text-base"
               >
-                Get Free Quote <FaArrowRight size={14} />
+                Free Consultation <FaArrowRight size={14} />
               </Link>
               <a
                 href={whatsappLink}
