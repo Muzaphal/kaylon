@@ -50,7 +50,7 @@ const teamMembers = [
 
 export default function AboutPage() {
   // WhatsApp configuration
-  const whatsappNumber = "256700659693";
+  const whatsappNumber = "256703355441";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
