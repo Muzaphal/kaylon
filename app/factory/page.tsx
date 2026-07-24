@@ -258,7 +258,7 @@ export default function FactoryPage() {
             >
               <div className="relative h-[350px] sm:h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-white/50">
                 <Image
-                  src="/factory/gallery-9.png"
+                  src="/factory/gallery9.png"
                   alt="KayLon Factory"
                   fill
                   className="object-cover"
